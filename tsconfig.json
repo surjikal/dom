@@ -1,0 +1,29 @@
+{
+  "include": [
+    "src/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "test",
+    "src/**/*.test.ts",
+    "dist"
+  ],
+  "ts-node": {
+    "transpileOnly": true,
+  },
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "rootDir": "src",
+    "lib": [
+      "ES2020"
+    ],
+    "module": "commonjs",
+    "outDir": "dist",
+    "strict": true,
+    "target": "ES5"
+  }
+}
