@@ -1,5 +1,6 @@
 {
   "name": "whoiz",
+  "license": "MIT",
   "version": "1.0.0",
   "main": "dist/index",
   "types": "dist/index",
@@ -24,6 +25,15 @@
     "name": "Nick Porter",
     "email": "github.dom@surj.email"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/surjikal/whoiz.git"
+  },
+  "homepage": "https://github.com/surjikal/whoiz",
+  "bugs": "https://github.com/surjikal/whoiz/issues",
+  "keywords": [
+    "whois"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged && npm test"

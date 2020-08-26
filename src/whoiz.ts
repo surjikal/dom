@@ -6,7 +6,7 @@ const usage = (...error: string[]) => {
     if (error.length !== 0) {
         console.error('ERROR:', ...error);
     }
-    console.error('Usage: ./lookup <domain>');
+    console.error('Usage: ./whoiz <domain>');
     process.exit(-1);
 };
 
