@@ -40,5 +40,3 @@ export const main = async (argv: string[]) => {
     const response = await lookup(domain);
     formatResponse(response);
 };
-
-main(process.argv);

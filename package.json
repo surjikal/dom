@@ -4,7 +4,7 @@
   "main": "dist/index",
   "types": "dist/index",
   "bin": {
-    "dom": "./dist/index.js"
+    "whoiz": "./dist/index.js"
   },
   "files": [
     "dist/**/*"
