@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/surjikal/whoiz/compare/v1.1.0...v1.1.1) (2021-06-27)
+
+
+### Bug Fixes
+
+* **github:** configure npm registry ([96a00a6](https://github.com/surjikal/whoiz/commit/96a00a68650b14c02daf24dcefc832307c50b0ca))
+
 ## 1.1.0 (2021-06-27)
 
 
