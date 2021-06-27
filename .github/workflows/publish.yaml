@@ -1,7 +1,10 @@
 name: Publish Node.JS Package
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - "!*"
+    tags:
+      - "v*"
 jobs:
   build:
     runs-on: ubuntu-latest
