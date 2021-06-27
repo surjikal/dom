@@ -12,11 +12,7 @@
   ],
   "scripts": {
     "build": "rimraf ./dist && tsc",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run lint",
-    "preversion": "npm run lint && npm run format && npm run build",
-    "version": "git add -A",
-    "postversion": "git push && git push --tags",
+    "release": "standard-version",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,ts}\"",
     "lint": "prettier --check \"src/**/*.{js,ts}\""
@@ -37,12 +33,14 @@
   "husky": {
     "hooks": {
       "commit-msg": "commitlint --edit ${HUSKY_GIT_PARAMS}",
-      "pre-commit": "lint-staged && npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
     "src/**/*.{js,ts}": [
-      "prettier --check"
+      "prettier --check",
+      "npm run format",
+      "npm test"
     ]
   },
   "devDependencies": {
