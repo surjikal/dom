@@ -36,6 +36,7 @@
   ],
   "husky": {
     "hooks": {
+      "commit-msg": "commitlint --edit ${HUSKY_GIT_PARAMS}",
       "pre-commit": "lint-staged && npm test"
     }
   },
@@ -47,12 +48,15 @@
   "devDependencies": {
     "@types/dedent": "^0.7.0",
     "@types/jest": "^26.0.10",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "husky": "^4.2.5",
     "jest": "^27.0.5",
     "lint-staged": "^10.2.11",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.1.0",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.0",
     "ts-jest": "^27.0.3",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2"
@@ -60,7 +64,6 @@
   "dependencies": {
     "date-fns": "^2.15.0",
     "dedent": "^0.7.0",
-
     "whois": "^2.13.0"
   }
 }
