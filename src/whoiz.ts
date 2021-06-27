@@ -3,9 +3,7 @@ import { lookup, WhoisResponseGeneric } from './client';
 import { parse } from './domain';
 
 const usage = (...error: string[]) => {
-    if (error.length !== 0) {
-        console.error('ERROR:', ...error);
-    }
+    if (error.length !== 0) console.error('ERROR:', ...error);
     console.error('Usage: ./whoiz <domain>');
     process.exit(-1);
 };
@@ -16,7 +14,8 @@ export const parseArgs = (argv: string[]) => {
     try {
         domain = parse(argv[2]);
     } catch (error) {
-        usage('invalid domain:', error);
+        console.error(error);
+        usage('invalid domain');
     }
     return { domain };
 };
